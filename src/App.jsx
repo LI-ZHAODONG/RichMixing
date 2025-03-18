@@ -1,15 +1,14 @@
 import React from "react";
 import "./App.css"; // Import the CSS file
 import videoBg from "./assets/videobg.mp4"; // Import the video file
-import ShoppingVanIcon from "./assets/shoppingcart.svg";
+import TR_Logo from "./assets/TR_Logo.png";
+import RichLee from "./assets/RichLee.png";
 
 function Navbar() {
   return (
     <>
       <div className="navbar">
-        <h1>
-          <span className="goldRich">Rich</span> Mixing
-        </h1>
+        <img src={TR_Logo} alt="TR_Logo" className="TR_Logo" />
         <ul>
           <li>About</li>
           <li>Mixing</li>
@@ -27,6 +26,14 @@ function Navbar() {
       <video autoPlay loop muted playsInline className="videobg">
         <source src={videoBg} type="video/mp4" />
       </video>
+
+      <div className="intro">
+        <h1>
+          <img src={RichLee} alt="RichLee" className="RichLee" />
+          <span className="desc">Solo hip-hop artist & producer<br /> International student from China, based in Stuttgart, Germany</span><br />
+          {/* <span className="logo">xxx xxx xxx</span><br /> */}
+        </h1>
+      </div>
     </>
   );
 }
