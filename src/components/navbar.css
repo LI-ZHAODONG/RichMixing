@@ -39,7 +39,6 @@
     display: flex; /* Align items in a row / horizontally*/
     gap: 20px; /* Add space between items */
     align-items: center; /* Center items vertically */
-    /* margin: 0; */
     padding-left: 150px;
     padding-right: 100px;
 }

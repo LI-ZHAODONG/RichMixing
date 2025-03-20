@@ -1,11 +1,122 @@
 .mixingBG {
     position: fixed;
-    top: 0;
-    /* transform: rotate(-90deg); */
+    display: flex;
+    bottom: 0;
     width: 100vw;
-    
-    /* background: rgba(0, 0, 0, 0); */
-    /* height: 100vh; */
-    z-index: -1; /* under one layer */
-    filter: brightness(45%);
+    height: 100%;
+    z-index: -5;
+    /* filter: brightness(45%); */
+    background: linear-gradient(to bottom, black 50%, rgb(250, 159, 0) 135%);
+}
+
+.mixingPlan{
+    position: fixed; /* important, stick on top even scroll down; lock to the view point */
+    width: 100%;
+    top: 10%;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Plans{
+    display: flex; /* Align items horizontally */
+    position: relative; /* important, stick on top even scroll down; lock to the view point */
+    margin-top: 0px;
+    gap: 50px;
+}
+
+.mixingTitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+.Plan_Vocal{
+    width: 400px;
+    height: 60vh;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgba(250, 158, 0, 0.822);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.Plan_Vocal .title{
+    font-size: 20px;
+    /* position: relative; */
+
+    margin-bottom: 0px;
+}
+
+.Plan_Vocal .desc{
+    font-size: 16px;
+    /* position: relative; */
+    /* display: flex; */
+    margin-top: 0px;
+}
+
+.Plan_Vocal .price{
+    font-size: 40px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0px;
+}
+
+.Plan_All{
+    width: 400px;
+    height: 60vh; /*use vh or vw can adjust the size according to the screen*/
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgba(250, 158, 0, 0.822);
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.Plan_All .desc{
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.Plan_All .title{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.Plan_All .price{
+    font-size: 40px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0px;
+}
+
+.music-container{
+    position: relative; /* important, stick on top even scroll down; lock to the view point */
+    width: 50vw;
+    height: 55vh;
+    display: flex; /* Align items horizontally */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.musicTitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+audio {
+    width: 20vw; /* Makes the player stretch fully inside its container */
+    height: 5vh; /* Makes the player stretch fully inside its container */
+}
+
+.below_word{
+    position: relative;
+    display: flex;
+    width: 50vw;
+    height: 60vh;
+    gap: 50px;
+    justify-content: center;
+    /* align-items: center; */
 }
